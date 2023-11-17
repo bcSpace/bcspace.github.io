@@ -1,19 +1,94 @@
-/*img {
-  animation: rotation 2s infinite linear;
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}*/
+.logo h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
 
+nav ul {
+    list-style: none;
+    display: flex;
+}
 
-img:hover {
-	width: 500px;
-	height:500px;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+#banner {
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 100%);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#banner h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#services, #why-choose-us, #testimonials, #about, #contact {
+    padding: 4em 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
